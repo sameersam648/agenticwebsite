@@ -32,7 +32,7 @@ const Header: React.FC = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-8">
             <a href="#features" className="text-gray-700 hover:text-purple-600 transition-colors duration-200 font-medium">
               Features
             </a>
@@ -51,7 +51,7 @@ const Header: React.FC = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-700 hover:text-purple-600 transition-colors duration-200"
@@ -63,7 +63,7 @@ const Header: React.FC = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-lg border-b border-gray-200/20 shadow-lg">
+          <div className="lg:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-lg border-b border-gray-200/20 shadow-lg">
             <div className="px-4 py-6 space-y-4">
               <a href="#features" className="block text-gray-700 hover:text-purple-600 transition-colors duration-200 font-medium">
                 Features
